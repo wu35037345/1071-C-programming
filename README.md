@@ -18,7 +18,7 @@ int main()
     int type;
     while(1)
     {
-        printf("Enter choice");
+        printf("Enter choice: ");
         printf("Main Menu\n");
         printf("1. Rectangle\n");
         printf("2. Vertical Triangle\n");

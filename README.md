@@ -255,27 +255,6 @@ int main()
 }
 #include<stdio.h>
 
-int main(){
-    int height;
-    int h1;
-    int h2;
-    int cm;
-    int kg;
-    int k1;
-    int k2;
-    printf("Enter height: ");
-    scanf("%d %d",h1,h2);
-    for(int i=h1;i<=h2;i++){
-        k1=(i/100)*(i/100)*18.5;
-        k2=(i/100)*(i/100)*24;
-        printf("%3d=%4.1f~%4.1f",i,k1,k2);
-
-
-    }
-
-}
-#include<stdio.h>
-
 int main()
 {
     int n1;
@@ -286,7 +265,7 @@ int main()
     int a4;
     int a5;
     printf("Enter two integers: ");
-    scanf("%d %d",n1,n2);
+    scanf("%d %d",&n1,&n2);
     if(n1>=0&&n2>=0)
     {
         a1=n1+n2;
@@ -302,6 +281,85 @@ int main()
     printf("%d %% %d=%d\n",n1,n2,a5);
     return 0;
 }
+#include<stdio.h>
+
+int main()
+{
+    int height;
+    int h1;
+    int h2;
+    float k1;
+    float k2;
+    printf("Enter height(-1 to exit): ");
+    scanf("%d %d",&h1,&h2);
+    if(h1>=0 && h2>=0)
+    {
+        for(int i=h1;i<=h2;i++)
+        {
+            k1=18.5*(i*i)/10000.;
+            k2=24*(i*i)/10000.;
+            printf("%4d (cm) = %5.1f ~ %5.1f (kg)\n",i,k1,k2);
+
+
+        }
+
+    }else{
+        printf("Bye! Coding by your_ID");
+    }
+
+    return 0;
+
+}
+#include<stdio.h>
+void prchar(char c,int n)
+{
+    for(int i=1; i<=n; i++)
+        printf("%c",c);
+}
+int main()
+{
+    int height;
+    int width;
+    printf("Enter height (-1 to exit): ");
+    scanf("%d",&height);
+    width=height;
+    if(height>=0)
+    {
+        for(int i=1; i<=height; i++)
+        {
+            prchar(' ',height-i);
+            prchar('*',i);
+            prchar(' ',2);
+            prchar('*',i);
+            printf("\n");
+
+        }
+    }else{
+            printf("Bye! coding by yourID");
+        }
+
+    return 0;
+}
+#include<stdio.h>
+void encode(int N)
+{
+    int a,b,c,d;
+    a=((N/1000)+5)*10;
+    b=(N%1000)*100;
+    c=(N%100)*1000;
+    d=
+    
+}
+int main()
+{
+    int a,b,c,d;
+    int N;
+    printf("Enter N (-1 to exit): ");
+    scanf("%d",&N);
+    encode(N);
+
+}
+
 
 
 

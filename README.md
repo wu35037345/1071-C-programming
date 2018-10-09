@@ -253,7 +253,55 @@ int main()
     }
     return 0;
 }
+#include<stdio.h>
 
+int main(){
+    int height;
+    int h1;
+    int h2;
+    int cm;
+    int kg;
+    int k1;
+    int k2;
+    printf("Enter height: ");
+    scanf("%d %d",h1,h2);
+    for(int i=h1;i<=h2;i++){
+        k1=(i/100)*(i/100)*18.5;
+        k2=(i/100)*(i/100)*24;
+        printf("%3d=%4.1f~%4.1f",i,k1,k2);
+
+
+    }
+
+}
+#include<stdio.h>
+
+int main()
+{
+    int n1;
+    int n2;
+    int a1;
+    int a2;
+    int a3;
+    int a4;
+    int a5;
+    printf("Enter two integers: ");
+    scanf("%d %d",n1,n2);
+    if(n1>=0&&n2>=0)
+    {
+        a1=n1+n2;
+        a2=n1-n2;
+        a3=n1*n2;
+        a4=n1/n2;
+        a5=n1%n2;
+    }
+    printf("%d+%d=%d\n",n1,n2,a1);
+    printf("%d-%d=%d\n",n1,n2,a2);
+    printf("%d*%d=%d\n",n1,n2,a3);
+    printf("%d/%d=%d\n",n1,n2,a4);
+    printf("%d %% %d=%d\n",n1,n2,a5);
+    return 0;
+}
 
 
 
